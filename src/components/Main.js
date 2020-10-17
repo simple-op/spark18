@@ -3,22 +3,28 @@ import {useSelector} from 'react-redux';
 
 function Main() {
 
-const name = useSelector(state=>state.name)
-
+const portugal = useSelector(state=>state.Portugal)
+const nicaragua=useSelector(state=>state.Nicaragua)
+const  marshalIslands=useSelector(state=>state.marshalIslands)
+c 
 const [_name,setName]= useState(name)
 
-const change = ()=>{
-    setName("wdwjsd")
-}
+
 
     return (
         <div>
-            {_name}
+            <ul>
+           {portugal&&portugal.map(v=>
+            <li>
+            
+                 {v}
+                
+                </li>
+            
+            )}
+            </ul>
 
 
-            <button onClick={
-                change
-            }>abcd</button>
         </div>
     )
 }

@@ -8,8 +8,3 @@ export const Check = ()=>{
     }
 }
 
-export const Remove =()=>{
-    return {
-        type:REMOVE
-    }
-}
